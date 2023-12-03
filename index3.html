@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПДВ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo"><img src="assets/images/logo.png" alt="Логотип" class="logoimg"></div>
+            <div class="title">Податок на прибуток</div>
+        </header>
+        <nav>
+            <ul class="list">
+                <li><a href="index4.html">Головна</a></li>
+                <li><a href="index5.html">ПДВ</a></li>
+                <li><a href="index6.html">Як розраховується ПДВ?</a></li>
+                <li><a href="index3.html">Нульова ставка</a></li>
+                <li><a href="index2.html">7% ставка</a></li>
+                <li><a href="index1.html">14% ставка</a></li>
+                <li><a href="index0.html">20% ставка</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside class="left">
+                <h1>Податкова ставка 0%</h1>
+                <p align="justify"><p>Нульова ставка оподаткування застосовується щодо:</p>
+                <li><i>експортованих товарів та супутніх експорту послуг;</i></li>
+                <li><i>поставок для заправки або постачання морських (океанських) суден, що використовуються для діяльності, здійснюваної за межами територіальних вод України;</i></li>
+                <li><i>поставок для заправки або постачання повітряних суден, що виконують міжнародні рейси для навігаційної діяльності чи перевезення пасажирів або вантажів за плату;</i></li>
+                <li><i>поставок для заправки або постачання космічних кораблів;</i></li>
+                <li><i>поставок товарів і послуг магазинами безмитної роздрібної торгівлі, що перебувають в митній зоні;</i></li>
+                <li><i>послуг з перевезення пасажирів чи вантажів з митної території України за кордон.</i></li></p> 
+                <p><div class="calculator"><img src="assets/images/calculator.jpg" alt="ПДВ" class="calculator"></div></p>
+            </aside>
+            <article class="right">
+                <h2>Якщо щось з лівого переліку відповідає вашому запиту, то введіть наступні дані:</h2>
+                <p>Сума, з якої необхідно розрахувати податок</p>
+                <p><input type="text" id = "input_g"></p>
+                    <p><button id = "bth">Розрахувати</button></p>
+                    <p>Сума податку складає</p> 
+                    <p><input type="text" id = "input_h"></p>
+                    <p>Чиста сума складатиме</p> 
+                    <p><input type="text" id = "input_k"></p>
+                    </div>
+                <script>
+                    function fnc(){
+                        let g = parseInt(input_g.value);
+                        let h = g * 0;
+                        input_h.value = h;
+                        console.log(h);
+                    }
+                    bth.addEventListener("click",fnc);
+                </script>
+                <script>
+                    function fnc(){
+                        let g = parseInt(input_g.value);
+                        let k = g;
+                        input_k.value = k;
+                        console.log(k);
+                    }
+                    bth.addEventListener("click",fnc);
+                </script>
+            </article>
+        </main>
+
+    </div>
+</body>
+
+</html>
