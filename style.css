@@ -1,0 +1,78 @@
+.logo {
+    vertical-align: middle;
+    height: 128px;
+}
+.title {
+    vertical-align: middle;
+    font-family: 'Bad Script', cursive;
+    font-size: 36px;
+}
+.logoimg {
+    height: 100px;
+}
+.wrapper header{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    align-items:center;
+}
+nav{
+    background: #7f91f8;
+}
+.list{
+    display: flex;
+}
+.list li{
+    list-style: none;
+    padding: 7px;
+    border: 1px solid transparent;
+}
+.list li:hover{
+    border: 20px solid rgb(255, 255, 255);
+}
+.list li a{
+    color:rgb(255, 255, 255);
+}
+main{
+    display: flex;
+}
+.left{
+    width:35%;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    background-color: rgb(121, 215, 255);
+    text-align: justify;
+}
+.right{
+    width:65%;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    background-color: rgb(187, 253, 253);
+    text-align: justify;
+}
+footer{
+    background: #AAA;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    padding: 1;
+    margin: 1;
+    padding-left: 2cm;
+}
+.pdv{
+    width: 11cm;
+    height: 7cm;
+}
+.photo{
+    width: 17cm;
+    height: 10cm;
+}
+.calculator{
+    width: 8cm;
+    height: 9cm;
+}
