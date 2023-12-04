@@ -43,28 +43,28 @@
             <article class="right">
                 <h2>Якщо щось з лівого переліку відповідає вашому запиту, то введіть наступні дані:</h2>
                 <p>Сума, з якої необхідно розрахувати податок</p>
-                <p><input type="text" id = "input_g"></p>
+                <p><input type="text" id = "input_a"></p>
                     <p><button id = "bth">Розрахувати</button></p>
                     <p>Сума податку складає</p> 
-                    <p><input type="text" id = "input_h"></p>
+                    <p><input type="text" id = "input_b"></p>
                     <p>Чиста сума складатиме</p> 
-                    <p><input type="text" id = "input_k"></p>
+                    <p><input type="text" id = "input_c"></p>
                     </div>
                 <script>
                     function fnc(){
-                        let g = parseInt(input_g.value);
-                        let h = g * 0.2;
-                        input_h.value = h;
-                        console.log(h);
+                        let a = parseInt(input_g.value);
+                        let b = a * 0.2;
+                        input_h.value = b;
+                        console.log(b);
                     }
                     bth.addEventListener("click",fnc);
                 </script>
                 <script>
                     function fnc(){
-                        let g = parseInt(input_g.value);
-                        let k = g * 0.8;
-                        input_k.value = k;
-                        console.log(k);
+                        let a = parseInt(input_a.value);
+                        let c = a * 0.8;
+                        input_c.value = c;
+                        console.log(c);
                     }
                     bth.addEventListener("click",fnc);
                 </script>
