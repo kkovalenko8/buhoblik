@@ -41,7 +41,7 @@
                 <p><div class="calculator"><img src="calculator.jpg" alt="ПДВ" class="calculator"></div></p>
             </aside>
             <article class="right">
-                <h2>Якщо щось з лівого переліку відповідає вашому запиту, то введіть наступні дані:</h2>
+              <h2>Якщо щось з лівого переліку відповідає вашому запиту, то введіть наступні дані:</h2>
                 <p>Сума, з якої необхідно розрахувати податок</p>
                 <p><input type="text" id = "input_a"></p>
                     <p><button id = "bth">Розрахувати</button></p>
@@ -54,7 +54,7 @@
                     function fnc(){
                         let a = parseInt(input_a.value);
                         let b = a * 0.2;
-                        input_h.value = b;
+                        input_b.value = b;
                         console.log(b);
                     }
                     bth.addEventListener("click",fnc);
